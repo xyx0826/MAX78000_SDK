@@ -52,7 +52,6 @@ COMPILER=GCC
 # Specify the board used
 ifeq "$(BOARD)" ""
 BOARD=EvKit_V1
-#BOARD=FTHR_RevA
 endif
 
 # This is the path to the CMSIS root directory
@@ -69,24 +68,14 @@ export CMSIS_ROOT
 # LINKERFILE=$(CMSIS_ROOT)/Device/Maxim/$(TARGET_UC)/Source/GCC/max78000_arm.ld
 
 # Source files for this test (add path to VPATH below)
-SRCS  = main.c 
-SRCS += cnn.c
+SRCS  = main.c cnn.c
+SRCS += softmax.c
 
 # Where to find source files for this test
 VPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-VPATH += ../Common/
-else
-VPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 VPATH += $(CMSIS_ROOT)/Device/Maxim/$(TARGET_UC)/Source
 # Where to find header files for this test
 IPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-IPATH += ../Common/
-else
-IPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 
 # Enable assertion checking for development
 PROJ_CFLAGS+=-DMXC_ASSERT_ENABLE

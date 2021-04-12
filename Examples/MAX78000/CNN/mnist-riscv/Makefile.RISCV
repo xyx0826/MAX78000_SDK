@@ -51,7 +51,6 @@ COMPILER=GCC
 # Specify the board used
 ifeq "$(BOARD)" ""
 BOARD=EvKit_V1
-#BOARD=FTHR_RevA
 endif
 
 RISCV_CORE=RV32
@@ -68,25 +67,14 @@ CMSIS_ROOT=$(LIBS_DIR)/CMSIS
 #Use this for other library make files so they are all based off the same as root as the project
 export CMSIS_ROOT
 # Source files for this test (add path to VPATH below)
-SRCS  = main_riscv.c
-SRCS += cnn.c
+SRCS  = main_riscv.c cnn.c
 SRCS += softmax.c
 
 # Where to find source files for this test
 VPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-VPATH += ../Common/
-else
-VPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 VPATH += $(CMSIS_ROOT)/Device/Maxim/$(TARGET_UC)/Source
 # Where to find header files for this test
 IPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-IPATH += ../Common/
-else
-IPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 
 # Enable assertion checking for development
 PROJ_CFLAGS+=-DMXC_ASSERT_ENABLE

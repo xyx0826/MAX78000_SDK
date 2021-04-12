@@ -51,7 +51,6 @@ COMPILER=GCC
 # Specify the board used
 ifeq "$(BOARD)" ""
 BOARD=EvKit_V1
-#BOARD=FTHR_RevA
 endif
 
 # This is the path to the CMSIS root directory
@@ -69,19 +68,9 @@ SRCS  = main.c
 
 # Where to find source files for this test
 VPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-VPATH += ../Common/
-else
-VPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 VPATH += $(CMSIS_ROOT)/Device/Maxim/$(TARGET_UC)/Source
 # Where to find header files for this test
 IPATH  = .
-ifeq "$(MAXIM_PATH)" ""
-IPATH += ../Common/
-else
-IPATH += /$(subst \,/,$(subst :,,$(MAXIM_PATH))/Examples/$(TARGET)/CNN/Common/)
-endif
 
 PROJ_CFLAGS+=-DARM_MATH_CM4
 

@@ -104,7 +104,7 @@ int main(void)
   // CNN clock: 50 MHz div 1
   cnn_enable(MXC_S_GCR_PCLKDIV_CNNCLKSEL_PCLK, MXC_S_GCR_PCLKDIV_CNNCLKDIV_DIV1);
 
-  printf("\n*** RISC-V CNN Inference Test ***\n");
+  printf("\n*** CNN Inference Test ***\n");
 
   cnn_init(); // Bring state machine into consistent state
   cnn_load_weights(); // Load kernels

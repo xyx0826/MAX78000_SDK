@@ -62,8 +62,6 @@ int main(void)
   MXC_SYS_ClockEnable(MXC_SYS_PERIPH_CLOCK_SMPHR); // Enable Sempahore clock
   NVIC_SetVector(RISCV_IRQn, WakeISR); // Set wakeup ISR
 
-  printf("Waiting...\n");
-  
   // DO NOT DELETE THIS LINE:
   MXC_Delay(SEC(2)); // Let debugger interrupt if needed
 

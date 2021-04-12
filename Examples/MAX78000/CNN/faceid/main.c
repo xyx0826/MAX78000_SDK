@@ -238,7 +238,7 @@ int main(void)
   printf("\n*** PASS ***\n\n");
 
 #ifdef CNN_INFERENCE_TIMER
-  printf("Approximate data loading and inference time: %d us\n\n", cnn_time);
+  printf("Approximate data loading and inference time: %u us\n\n", cnn_time);
 #endif
 
   cnn_disable(); // Shut down CNN clock, disable peripheral

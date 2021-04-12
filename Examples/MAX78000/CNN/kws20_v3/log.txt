@@ -278,7 +278,7 @@ L2 G0 R05 (00100298): 00000001 // Stride
 L2 G0 R06 (00100318): 00000800 // SRAM write ptr
 L2 G0 R07 (00100398): 00000000 // Write ptr time slot offs *
 L2 G0 R08 (00100418): 00002000 // Write ptr mask offs
-L2 G0 R09 (00100498): 00000001 // Write ptr multi-pass channel offs
+L2 G0 R09 (00100498): 00000000 // Write ptr multi-pass channel offs *
 L2 G0 R10 (00100518): 00000000 // SRAM read ptr *
 L2 G0 R11 (00100598): 00006ba0 // Layer control
 L2 G0 R20 (00100a18): 0001f801 // Layer control 2
@@ -295,7 +295,7 @@ L2 G1 R05 (00500298): 00000001 // Stride
 L2 G1 R06 (00500318): 00000800 // SRAM write ptr
 L2 G1 R07 (00500398): 00000000 // Write ptr time slot offs *
 L2 G1 R08 (00500418): 00002000 // Write ptr mask offs
-L2 G1 R09 (00500498): 00000001 // Write ptr multi-pass channel offs
+L2 G1 R09 (00500498): 00000000 // Write ptr multi-pass channel offs *
 L2 G1 R10 (00500518): 00000000 // SRAM read ptr *
 L2 G1 R11 (00500598): 00000ba0 // Layer control
 L2 G1 R20 (00500a18): 0001f801 // Layer control 2
@@ -312,7 +312,7 @@ L2 G2 R05 (00900298): 00000001 // Stride
 L2 G2 R06 (00900318): 00000800 // SRAM write ptr
 L2 G2 R07 (00900398): 00000000 // Write ptr time slot offs *
 L2 G2 R08 (00900418): 00002000 // Write ptr mask offs
-L2 G2 R09 (00900498): 00000001 // Write ptr multi-pass channel offs
+L2 G2 R09 (00900498): 00000000 // Write ptr multi-pass channel offs *
 L2 G2 R10 (00900518): 00000000 // SRAM read ptr *
 L2 G2 R11 (00900598): 00000ba0 // Layer control
 L2 G2 R20 (00900a18): 0001f801 // Layer control 2
@@ -329,7 +329,7 @@ L2 G3 R05 (00d00298): 00000001 // Stride
 L2 G3 R06 (00d00318): 00000800 // SRAM write ptr
 L2 G3 R07 (00d00398): 00000000 // Write ptr time slot offs *
 L2 G3 R08 (00d00418): 00002000 // Write ptr mask offs
-L2 G3 R09 (00d00498): 00000001 // Write ptr multi-pass channel offs
+L2 G3 R09 (00d00498): 00000000 // Write ptr multi-pass channel offs *
 L2 G3 R10 (00d00518): 00000000 // SRAM read ptr *
 L2 G3 R11 (00d00598): 00000ba0 // Layer control
 L2 G3 R20 (00d00a18): 0001f801 // Layer control 2
@@ -346,7 +346,7 @@ L3 G0 R05 (0010029c): 00000000 // Stride *
 L3 G0 R06 (0010031c): 00000000 // SRAM write ptr *
 L3 G0 R07 (0010039c): 00000000 // Write ptr time slot offs *
 L3 G0 R08 (0010041c): 00002000 // Write ptr mask offs
-L3 G0 R09 (0010049c): 00000001 // Write ptr multi-pass channel offs
+L3 G0 R09 (0010049c): 00000000 // Write ptr multi-pass channel offs *
 L3 G0 R10 (0010051c): 00000800 // SRAM read ptr
 L3 G0 R11 (0010059c): 0000eb20 // Layer control
 L3 G0 R20 (00100a1c): 00017800 // Layer control 2
@@ -363,7 +363,7 @@ L3 G1 R05 (0050029c): 00000000 // Stride *
 L3 G1 R06 (0050031c): 00000000 // SRAM write ptr *
 L3 G1 R07 (0050039c): 00000000 // Write ptr time slot offs *
 L3 G1 R08 (0050041c): 00002000 // Write ptr mask offs
-L3 G1 R09 (0050049c): 00000001 // Write ptr multi-pass channel offs
+L3 G1 R09 (0050049c): 00000000 // Write ptr multi-pass channel offs *
 L3 G1 R10 (0050051c): 00000800 // SRAM read ptr
 L3 G1 R11 (0050059c): 00000b20 // Layer control
 L3 G1 R20 (00500a1c): 00017800 // Layer control 2
@@ -380,7 +380,7 @@ L3 G2 R05 (0090029c): 00000000 // Stride *
 L3 G2 R06 (0090031c): 00000000 // SRAM write ptr *
 L3 G2 R07 (0090039c): 00000000 // Write ptr time slot offs *
 L3 G2 R08 (0090041c): 00002000 // Write ptr mask offs
-L3 G2 R09 (0090049c): 00000001 // Write ptr multi-pass channel offs
+L3 G2 R09 (0090049c): 00000000 // Write ptr multi-pass channel offs *
 L3 G2 R10 (0090051c): 00000800 // SRAM read ptr
 L3 G2 R11 (0090059c): 00000b20 // Layer control
 L3 G2 R20 (00900a1c): 00017800 // Layer control 2
@@ -397,7 +397,7 @@ L3 G3 R05 (00d0029c): 00000000 // Stride *
 L3 G3 R06 (00d0031c): 00000000 // SRAM write ptr *
 L3 G3 R07 (00d0039c): 00000000 // Write ptr time slot offs *
 L3 G3 R08 (00d0041c): 00002000 // Write ptr mask offs
-L3 G3 R09 (00d0049c): 00000001 // Write ptr multi-pass channel offs
+L3 G3 R09 (00d0049c): 00000000 // Write ptr multi-pass channel offs *
 L3 G3 R10 (00d0051c): 00000800 // SRAM read ptr
 L3 G3 R11 (00d0059c): 00000b20 // Layer control
 L3 G3 R20 (00d00a1c): 00017800 // Layer control 2
@@ -414,7 +414,7 @@ L4 G0 R05 (001002a0): 00000001 // Stride
 L4 G0 R06 (00100320): 00000800 // SRAM write ptr
 L4 G0 R07 (001003a0): 00000000 // Write ptr time slot offs *
 L4 G0 R08 (00100420): 00002000 // Write ptr mask offs
-L4 G0 R09 (001004a0): 00000001 // Write ptr multi-pass channel offs
+L4 G0 R09 (001004a0): 00000000 // Write ptr multi-pass channel offs *
 L4 G0 R10 (00100520): 00000000 // SRAM read ptr *
 L4 G0 R11 (001005a0): 00006ba0 // Layer control
 L4 G0 R20 (00100a20): 0001f800 // Layer control 2
@@ -431,7 +431,7 @@ L4 G1 R05 (005002a0): 00000001 // Stride
 L4 G1 R06 (00500320): 00000800 // SRAM write ptr
 L4 G1 R07 (005003a0): 00000000 // Write ptr time slot offs *
 L4 G1 R08 (00500420): 00002000 // Write ptr mask offs
-L4 G1 R09 (005004a0): 00000001 // Write ptr multi-pass channel offs
+L4 G1 R09 (005004a0): 00000000 // Write ptr multi-pass channel offs *
 L4 G1 R10 (00500520): 00000000 // SRAM read ptr *
 L4 G1 R11 (005005a0): 00000ba0 // Layer control
 L4 G1 R20 (00500a20): 0001f800 // Layer control 2
@@ -448,7 +448,7 @@ L4 G2 R05 (009002a0): 00000001 // Stride
 L4 G2 R06 (00900320): 00000800 // SRAM write ptr
 L4 G2 R07 (009003a0): 00000000 // Write ptr time slot offs *
 L4 G2 R08 (00900420): 00002000 // Write ptr mask offs
-L4 G2 R09 (009004a0): 00000001 // Write ptr multi-pass channel offs
+L4 G2 R09 (009004a0): 00000000 // Write ptr multi-pass channel offs *
 L4 G2 R10 (00900520): 00000000 // SRAM read ptr *
 L4 G2 R11 (009005a0): 00000ba0 // Layer control
 L4 G2 R20 (00900a20): 0001f800 // Layer control 2
@@ -465,7 +465,7 @@ L4 G3 R05 (00d002a0): 00000001 // Stride
 L4 G3 R06 (00d00320): 00000800 // SRAM write ptr
 L4 G3 R07 (00d003a0): 00000000 // Write ptr time slot offs *
 L4 G3 R08 (00d00420): 00002000 // Write ptr mask offs
-L4 G3 R09 (00d004a0): 00000001 // Write ptr multi-pass channel offs
+L4 G3 R09 (00d004a0): 00000000 // Write ptr multi-pass channel offs *
 L4 G3 R10 (00d00520): 00000000 // SRAM read ptr *
 L4 G3 R11 (00d005a0): 00000ba0 // Layer control
 L4 G3 R20 (00d00a20): 0001f800 // Layer control 2
@@ -618,7 +618,7 @@ L7 G0 R05 (001002ac): 00000001 // Stride
 L7 G0 R06 (0010032c): 00000000 // SRAM write ptr *
 L7 G0 R07 (001003ac): 00000000 // Write ptr time slot offs *
 L7 G0 R08 (0010042c): 00002000 // Write ptr mask offs
-L7 G0 R09 (001004ac): 00000001 // Write ptr multi-pass channel offs
+L7 G0 R09 (001004ac): 00000000 // Write ptr multi-pass channel offs *
 L7 G0 R10 (0010052c): 00000800 // SRAM read ptr
 L7 G0 R11 (001005ac): 0000eba0 // Layer control
 L7 G0 R20 (00100a2c): 0001f801 // Layer control 2
@@ -635,7 +635,7 @@ L7 G1 R05 (005002ac): 00000001 // Stride
 L7 G1 R06 (0050032c): 00000000 // SRAM write ptr *
 L7 G1 R07 (005003ac): 00000000 // Write ptr time slot offs *
 L7 G1 R08 (0050042c): 00002000 // Write ptr mask offs
-L7 G1 R09 (005004ac): 00000001 // Write ptr multi-pass channel offs
+L7 G1 R09 (005004ac): 00000000 // Write ptr multi-pass channel offs *
 L7 G1 R10 (0050052c): 00000800 // SRAM read ptr
 L7 G1 R11 (005005ac): 00000ba0 // Layer control
 L7 G1 R20 (00500a2c): 0001f801 // Layer control 2
@@ -652,7 +652,7 @@ L7 G2 R05 (009002ac): 00000001 // Stride
 L7 G2 R06 (0090032c): 00000000 // SRAM write ptr *
 L7 G2 R07 (009003ac): 00000000 // Write ptr time slot offs *
 L7 G2 R08 (0090042c): 00002000 // Write ptr mask offs
-L7 G2 R09 (009004ac): 00000001 // Write ptr multi-pass channel offs
+L7 G2 R09 (009004ac): 00000000 // Write ptr multi-pass channel offs *
 L7 G2 R10 (0090052c): 00000800 // SRAM read ptr
 L7 G2 R11 (009005ac): 00000ba0 // Layer control
 L7 G2 R20 (00900a2c): 0001f801 // Layer control 2
@@ -669,7 +669,7 @@ L7 G3 R05 (00d002ac): 00000001 // Stride
 L7 G3 R06 (00d0032c): 00000000 // SRAM write ptr *
 L7 G3 R07 (00d003ac): 00000000 // Write ptr time slot offs *
 L7 G3 R08 (00d0042c): 00002000 // Write ptr mask offs
-L7 G3 R09 (00d004ac): 00000001 // Write ptr multi-pass channel offs
+L7 G3 R09 (00d004ac): 00000000 // Write ptr multi-pass channel offs *
 L7 G3 R10 (00d0052c): 00000800 // SRAM read ptr
 L7 G3 R11 (00d005ac): 00000ba0 // Layer control
 L7 G3 R20 (00d00a2c): 0001f801 // Layer control 2
@@ -686,7 +686,7 @@ L8 G0 R05 (001002b0): 00000000 // Stride *
 L8 G0 R06 (00100330): 00000800 // SRAM write ptr
 L8 G0 R07 (001003b0): 00000001 // Write ptr time slot offs
 L8 G0 R08 (00100430): 00002000 // Write ptr mask offs
-L8 G0 R09 (001004b0): 00000004 // Write ptr multi-pass channel offs
+L8 G0 R09 (001004b0): 00000000 // Write ptr multi-pass channel offs *
 L8 G0 R10 (00100530): 00000000 // SRAM read ptr *
 L8 G0 R11 (001005b0): 0001e920 // Layer control
 L8 G0 R20 (00100a30): 0000a003 // Layer control 2
@@ -703,7 +703,7 @@ L8 G1 R05 (005002b0): 00000000 // Stride *
 L8 G1 R06 (00500330): 00000800 // SRAM write ptr
 L8 G1 R07 (005003b0): 00000001 // Write ptr time slot offs
 L8 G1 R08 (00500430): 00002000 // Write ptr mask offs
-L8 G1 R09 (005004b0): 00000004 // Write ptr multi-pass channel offs
+L8 G1 R09 (005004b0): 00000000 // Write ptr multi-pass channel offs *
 L8 G1 R10 (00500530): 00000000 // SRAM read ptr *
 L8 G1 R11 (005005b0): 00010920 // Layer control
 L8 G1 R20 (00500a30): 0000a003 // Layer control 2
@@ -720,7 +720,7 @@ L8 G2 R05 (009002b0): 00000000 // Stride *
 L8 G2 R06 (00900330): 00000800 // SRAM write ptr
 L8 G2 R07 (009003b0): 00000001 // Write ptr time slot offs
 L8 G2 R08 (00900430): 00002000 // Write ptr mask offs
-L8 G2 R09 (009004b0): 00000004 // Write ptr multi-pass channel offs
+L8 G2 R09 (009004b0): 00000000 // Write ptr multi-pass channel offs *
 L8 G2 R10 (00900530): 00000000 // SRAM read ptr *
 L8 G2 R11 (009005b0): 00010920 // Layer control
 L8 G2 R20 (00900a30): 0000a003 // Layer control 2
@@ -737,7 +737,7 @@ L8 G3 R05 (00d002b0): 00000000 // Stride *
 L8 G3 R06 (00d00330): 00000800 // SRAM write ptr
 L8 G3 R07 (00d003b0): 00000001 // Write ptr time slot offs
 L8 G3 R08 (00d00430): 00002000 // Write ptr mask offs
-L8 G3 R09 (00d004b0): 00000004 // Write ptr multi-pass channel offs
+L8 G3 R09 (00d004b0): 00000000 // Write ptr multi-pass channel offs *
 L8 G3 R10 (00d00530): 00000000 // SRAM read ptr *
 L8 G3 R11 (00d005b0): 00010920 // Layer control
 L8 G3 R20 (00d00a30): 0000a003 // Layer control 2
